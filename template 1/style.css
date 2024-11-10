@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* all of elements*/
+*{
+    font-family: 'Poppins', sans-serif;
+    padding:0px ;
+    box-sizing: border-box;
+    margin: 0px;
+    scroll-behavior: smooth;/* بيغير شكل الاسكرول بتاع الصفحة بيبقا مرن شوية */
+}
+header{
+    background-color: rgba(102, 102, 102, 0.452);
+    width: 100%;
+    position: fixed;/* عشان اخلي الهيدر ثابت معايا ف الاسكرول */
+    z-index: 999;/* الهيدر يفضل موجود محدش يغطي عليه وانا بسكرول */
+    display: flex;
+    justify-content: space-between; /* هيعمل مسافه بين اللوجو والعناصر بتاع الناف */
+    padding:10px 200px ;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;/*عشان اشيل الخط اللي تحت الكلام */
+    color: black;/* اغير لون الخط بتاع الكلام *//**/
+    text-transform: uppercase;/* عشان اخلي الحروف كابتل */
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navagation a{
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.navagation a:hover{
+    color: whitesmoke;
+}
+/*------------------------main section ------------------------*/
+
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/19.jpg)  no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: rgba(0, 0, 0, 0.829);
+    font-size:1.4em;
+    font-weight: 500;
+}
+.main span{/* span inline ......*/
+    color: rgba(0, 0, 0, 0.973);
+    font-size:3em ;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3{
+    color: rgba(21, 4, 36, 0.705);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing:1px ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: black;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: rgba(245, 245, 245, 0.753);
+    text-decoration: none;
+    display: inline-block;
+   
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease; /*  ده عشان المربع*/
+}
+.main-btn:hover{
+    background-color:rgba(255, 255, 255, 0.274) ;
+    transform: scale(1.1); /*   عشان نخلي المربع بتاع الزرار يكبر شويه */
+    cursor:grabbing;
+}
+/* شكل الايقونات */
+.social-icons a{
+color: black;
+padding-right: 30px;
+font-size: 1.7em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #021138;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background-color:rgba(133, 131, 131, 0.301);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #021138;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #021138;
+   
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.work {
+    background-color: #54546138;
+}
+
+.work .content{
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.work-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.work-card:hover {
+   transform: scale(1.1);
+}
+
+.work-card:hover .work-image{
+    opacity: 0.9;
+ }
+
+.work-image img{
+    width: 100%
+}
+
+.work-info {
+    padding: 1em;
+}
+
+.work-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.work-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.cards-contact .icon{
+    font-size: 3em;
+}
+.cards-contact .info h3{
+    color: #000;
+}
+.footer{
+    background-color: rgba(102, 102, 102, 0.452);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+.footer-title span{
+    color: rgb(2, 2, 61);
+}
+.footer .social-icons{
+    color: rgb(2, 2, 61);
+}
+
+
+
+
+@media (max-width:1023px){ 
+    /*      لما تكون اكبر عرض 1023 */
+    /*    طبقلي بقا الحاجات دي   */
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/*                */
+@media (max-width:641px){
+    body{
+        font-size: 11px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 9px;
+     
+    }
+    .main-content h2{
+        font-size: 0.6em;
+    }
+
+    .main-content h3{
+        font-size: 1.1em;
+    }
+}
